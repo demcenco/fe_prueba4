@@ -1,4 +1,4 @@
-const base = 'http://192.168.1.40:3021/api';
+const base = 'http://localhost:3021/api';
 
 async function send({ method, path, data, token }) {
 	const opts = { method, headers: {} };

@@ -15,7 +15,7 @@ export const updateSchema = yup.object().shape({
 		.required('Debe ingresar los banos')
 		.typeError('Debe ingresar un numero de banos')
 		.min(0, 'La cantidad minima de banos es 1'),
-	type: yup.string().oneOf(['Casa', 'Departamento']),
+	type: yup.string().oneOf(['Casa', 'Departamento']).typeError('Debe elegir el tipo de inmueble'),
 	price: yup
 		.number()
 		.integer()
